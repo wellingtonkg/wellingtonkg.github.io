@@ -562,7 +562,8 @@
 							  <abbr>Linkedin:</abbr> https://www.linkedin.com/in/wellingtonkg<br>
                             </address>
 
-                            <form id="main-contact-form" name="contact-form" method="POST" action="https://formspree.io/f/xgvnveeq">
+                            <form id="main-contact-form" name="contact-form">
+                                <input type="text" name="_gotcha" style="display:none">
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" placeholder="Nome" required>
                                 </div>
@@ -577,6 +578,7 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary">Enviar</button>
                             </form>
+                            <div id="contact-status" class="alert"></div>
                         </div>
                     </div>
                 </div>
@@ -639,6 +641,44 @@
 			});
 		}
 		//google.maps.event.addDomListener(window, 'load', initialize_map);		
+
+        const form = document.getElementById("main-contact-form");
+        const statusBox = document.getElementById("contact-status");
+
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+            statusBox.style.display = "none"; // limpa status
+            const btn = form.querySelector("button");
+            btn.disabled = true;
+            btn.textContent = "Enviando...";
+
+            const data = new FormData(form);
+
+            try {
+                const res = await fetch("https://formspree.io/f/xgvnveeq", {
+                    method: "POST",
+                    body: data,
+                    headers: { "Accept": "application/json" }
+                });
+
+                if (res.ok) {
+                    form.reset();
+                    statusBox.textContent = "Mensagem enviada com sucesso! ✅";
+                    statusBox.className = "alert alert-success";
+                } else {
+                    const err = await res.json();
+                    statusBox.textContent = "Erro ao enviar: " + (err.error || "Tente novamente.");
+                    statusBox.className = "alert alert-error";
+                }
+            } catch (err) {
+                statusBox.textContent = "Falha de rede: " + err.message;
+                statusBox.className = "alert alert-error";
+            }
+
+            statusBox.style.display = "block";
+            btn.disabled = false;
+            btn.textContent = "Enviar";
+        });        
 	</script>
 </body>
 </html>
