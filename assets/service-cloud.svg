@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Cloud computing illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" rx="36"/>
+  <circle cx="950" cy="130" r="90" fill="#1d4ed8" opacity=".18"/>
+  <circle cx="180" cy="630" r="130" fill="#06b6d4" opacity=".10"/>
+  <rect x="180" y="180" width="840" height="440" rx="28" fill="#0b1220" stroke="#334155"/>
+  <g transform="translate(270 270)">
+    <rect x="0" y="0" width="200" height="220" rx="22" fill="#0f172a" stroke="#334155"/>
+    <rect x="270" y="0" width="200" height="220" rx="22" fill="#0f172a" stroke="#334155"/>
+    <rect x="540" y="0" width="120" height="220" rx="22" fill="#0f172a" stroke="#334155"/>
+    <path d="M240 150h40m-20-20v40M510 150h40m-20-20v40" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M160 280c0-41 33-74 74-74 8-48 49-84 99-84 44 0 81 27 95 66 10-5 21-8 33-8 42 0 76 34 76 76 0 4 0 8-1 12h17c37 0 67 30 67 67s-30 67-67 67H219c-42 0-76-34-76-76s34-76 76-76h3c-1-4-2-8-2-12z" fill="url(#accent)"/>
+  </g>
+  <text x="110" y="710" fill="#e2e8f0" font-size="56" font-family="Arial, Helvetica, sans-serif" font-weight="700">Cloud Infrastructure</text>
+  <text x="110" y="756" fill="#94a3b8" font-size="28" font-family="Arial, Helvetica, sans-serif">AWS, Azure, GCP, serverless and scalable architecture</text>
+</svg>

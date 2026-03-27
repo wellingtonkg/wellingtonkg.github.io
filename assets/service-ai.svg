@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Artificial intelligence illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="brain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" rx="36"/>
+  <g opacity=".22" stroke="#c4b5fd">
+    <path d="M80 120h1040M80 220h1040M80 320h1040M80 420h1040M80 520h1040M80 620h1040"/>
+    <path d="M120 80v640M260 80v640M400 80v640M540 80v640M680 80v640M820 80v640M960 80v640M1080 80v640"/>
+  </g>
+  <g transform="translate(360 145)">
+    <path d="M228 28c88 0 160 72 160 160 0 28-7 55-20 78 27 23 44 58 44 97 0 69-56 125-125 125H153C84 488 28 432 28 363c0-43 22-82 56-105-8-19-12-39-12-60 0-94 76-170 170-170 49 0 93 21 124 54 23-34 61-54 104-54z" fill="#0b1220" stroke="url(#brain)" stroke-width="10"/>
+    <g stroke="url(#brain)" stroke-width="8" stroke-linecap="round">
+      <path d="M120 168h120M126 248h90M258 202h114M282 294h80M164 334h128"/>
+      <path d="M185 140v70M315 175v68M224 224v70M358 248v66M278 304v72"/>
+    </g>
+    <g fill="#e0e7ff">
+      <circle cx="120" cy="168" r="12"/><circle cx="240" cy="168" r="12"/><circle cx="126" cy="248" r="12"/><circle cx="216" cy="248" r="12"/>
+      <circle cx="258" cy="202" r="12"/><circle cx="372" cy="202" r="12"/><circle cx="282" cy="294" r="12"/><circle cx="362" cy="294" r="12"/>
+      <circle cx="164" cy="334" r="12"/><circle cx="292" cy="334" r="12"/>
+    </g>
+  </g>
+  <text x="110" y="710" fill="#e2e8f0" font-size="56" font-family="Arial, Helvetica, sans-serif" font-weight="700">Artificial Intelligence</text>
+  <text x="110" y="756" fill="#c7d2fe" font-size="28" font-family="Arial, Helvetica, sans-serif">LLMs, machine learning and intelligent automation</text>
+</svg>
