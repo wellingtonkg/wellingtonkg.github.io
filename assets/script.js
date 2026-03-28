@@ -15,6 +15,10 @@ const mobileBtn = document.querySelector('.mobile-menu-btn');
 const mobileNav = document.querySelector('.mobile-nav');
 if(mobileBtn && mobileNav){
   mobileBtn.addEventListener('click', ()=> mobileNav.classList.toggle('open'));
+  // Fechar menu ao clicar em um link
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => mobileNav.classList.remove('open'));
+  });
 }
 
 const contactForm = document.getElementById('contactForm');

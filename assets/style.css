@@ -605,15 +605,17 @@ header.site-header {
 
 .desktop-nav {
   display: flex;
-  gap: 8px;
-  flex-wrap: wrap
+  gap: 4px;
+  flex-wrap: nowrap
 }
 
 .desktop-nav a {
-  padding: 10px 14px;
+  padding: 8px 11px;
   border-radius: 12px;
   color: var(--muted);
-  transition: .25s ease
+  transition: .25s ease;
+  font-size: 0.95rem;
+  white-space: nowrap
 }
 
 .desktop-nav a:hover {
@@ -624,22 +626,24 @@ header.site-header {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 10px
+  gap: 6px;
+  flex-shrink: 0
 }
 
 .lang-switch {
   display: flex;
-  gap: 8px;
+  gap: 4px;
   align-items: center
 }
 
 .lang-switch a {
-  padding: 10px 12px;
-  min-width: 46px;
+  padding: 8px 10px;
+  min-width: 40px;
   text-align: center;
   border-radius: 12px;
   border: 1px solid rgba(143, 158, 192, .18);
-  background: rgba(255, 255, 255, .04)
+  background: rgba(255, 255, 255, .04);
+  font-size: 0.9rem
 }
 
 .lang-switch a.active,
@@ -650,21 +654,22 @@ header.site-header {
 
 .mobile-menu-btn {
   display: none;
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   border-radius: 12px;
   border: 1px solid rgba(143, 158, 192, .18);
   background: rgba(255, 255, 255, .04);
-  color: #fff
+  color: #fff;
+  cursor: pointer
 }
 
 .mobile-menu-btn span {
   display: block;
-  width: 20px;
+  width: 16px;
   height: 2px;
   background: #fff;
-  margin: 5px auto;
+  margin: 4px auto;
   border-radius: 2px
 }
 
@@ -855,10 +860,6 @@ header.site-header {
 @media (max-width:760px) {
   .hero-content {
     padding: 132px 0 72px
-  }
-
-  .lang-switch {
-    display: none
   }
 
   .cta-row {
