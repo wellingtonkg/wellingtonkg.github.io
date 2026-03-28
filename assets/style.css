@@ -1391,8 +1391,133 @@ footer[id],
   [id="top"] {
     scroll-margin-top: 100px;
   }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 24px !important;
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+  }
 }
 
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 80px 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px !important;
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .03);
+  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+  min-height: 100%;
+}
+
+.testimonial-card:hover {
+  border-color: rgba(124, 196, 255, .32);
+  background: rgba(124, 196, 255, .04);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(124, 196, 255, .08);
+}
+
+.testimonial-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-quote-mark {
+  font-size: 48px;
+  color: var(--brand);
+  opacity: 0.3;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.testimonial-quote {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0 0 20px 0;
+  font-weight: 500;
+}
+
+.testimonial-context {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 24px 0;
+}
+
+.testimonial-footer {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.testimonial-author strong {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.testimonial-author span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.testimonial-author .company {
+  color: var(--brand);
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.testimonial-impact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.testimonial-impact .badge {
+  background: rgba(124, 196, 255, .15);
+  border: 1px solid rgba(124, 196, 255, .3);
+  color: var(--brand);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 60px 0;
+}
+
+.cta-section .btn {
+  margin-top: 20px;
+}
 
 /* final adjustments */
 .desktop-cta {
