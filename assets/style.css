@@ -1568,6 +1568,15 @@ footer[id],
   box-shadow: 0 12px 30px rgba(124, 196, 255, .30);
 }
 
+.team-avatar-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(124, 196, 255, .30);
+  border: 2px solid rgba(124, 196, 255, .3);
+}
+
 .team-card-body {
   padding: 24px;
   display: flex;
