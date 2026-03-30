@@ -89,3 +89,67 @@ if (contactForm && formStatus) {
     }
   });
 }
+
+// Carousel Functionality
+const carouselTrack = document.getElementById('carouselTrack');
+const carouselDots = document.getElementById('carouselDots');
+const carouselPrevBtn = document.querySelector('.carousel-prev');
+const carouselNextBtn = document.querySelector('.carousel-next');
+
+if (carouselTrack && carouselDots) {
+  const slides = carouselTrack.querySelectorAll('.carousel-slide');
+  const totalSlides = slides.length;
+  const slidesPerGroup = 5;
+  const totalGroups = Math.ceil(totalSlides / slidesPerGroup);
+  let currentGroupIndex = 0;
+
+  // Create dots for groups
+  for (let i = 0; i < totalGroups; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goToGroup(i));
+    carouselDots.appendChild(dot);
+  }
+
+  const dots = carouselDots.querySelectorAll('.carousel-dot');
+
+  function updateCarousel() {
+    const currentIndex = currentGroupIndex * slidesPerGroup;
+    const slideWidth = 100 / totalSlides;
+    carouselTrack.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentGroupIndex);
+    });
+  }
+
+  function goToGroup(groupIndex) {
+    currentGroupIndex = groupIndex;
+    updateCarousel();
+  }
+
+  function nextSlide() {
+    currentGroupIndex = (currentGroupIndex + 1) % totalGroups;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentGroupIndex = (currentGroupIndex - 1 + totalGroups) % totalGroups;
+    updateCarousel();
+  }
+
+  // Event listeners for buttons
+  if (carouselNextBtn) {
+    carouselNextBtn.addEventListener('click', nextSlide);
+  }
+
+  if (carouselPrevBtn) {
+    carouselPrevBtn.addEventListener('click', prevSlide);
+  }
+
+  // Auto-advance carousel every 5 seconds
+  setInterval(nextSlide, 5000);
+
+  // Initialize
+  updateCarousel();
+}
