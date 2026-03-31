@@ -1331,13 +1331,43 @@ section::before {
 
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 16px;
-  flex-wrap: wrap;
   margin-top: 18px;
   padding-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, .06);
   color: var(--muted);
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer-social .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(124, 196, 255, 0.1);
+  color: var(--brand);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(124, 196, 255, 0.2);
+}
+
+.footer-social .social-icon:hover {
+  background: var(--brand);
+  color: var(--bg);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(124, 196, 255, 0.3);
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
 }
 
 .footer-brand img {
