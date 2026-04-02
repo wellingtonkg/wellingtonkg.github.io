@@ -774,7 +774,11 @@ header.site-header {
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+  padding-bottom: 8px;
+  line-height: 1.1
 }
 
 .hero-v2 p {
