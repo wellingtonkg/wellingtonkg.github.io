@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- English Pages -->
   <url>
-    <loc>https://www.plugdig.com/</loc>
+    <loc>https://www.plugdig.io/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.plugdig.com/privacy-policy.html</loc>
+    <loc>https://www.plugdig.io/privacy-policy.html</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.plugdig.com/terms-service.html</loc>
+    <loc>https://www.plugdig.io/terms-service.html</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <!-- Portuguese Pages -->
   <url>
-    <loc>https://www.plugdig.com/pt/</loc>
+    <loc>https://www.plugdig.io/pt/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.plugdig.com/pt/privacy-policy.html</loc>
+    <loc>https://www.plugdig.io/pt/privacy-policy.html</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.plugdig.com/pt/terms-service.html</loc>
+    <loc>https://www.plugdig.io/pt/terms-service.html</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

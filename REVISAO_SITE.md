@@ -1,4 +1,4 @@
-# 📋 REVISÃO ESTRATÉGICA DO SITE PLUGDIG.COM.BR
+# 📋 REVISÃO ESTRATÉGICA DO SITE PLUGDIG.IO
 **Objetivo:** Análise completa e recomendações para otimizar o site para o mercado americano
 
 ---

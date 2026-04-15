@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.plugdig.com/sitemap.xml
+Sitemap: https://www.plugdig.io/sitemap.xml
